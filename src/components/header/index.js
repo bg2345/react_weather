@@ -19,7 +19,7 @@ class Header extends Component {
                 <NavLink className="nav-link" to='/'>Home <span className="sr-only">(current)</span></NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to='/sample'>Sample</NavLink>
+                <NavLink className="nav-link" to='/standings'>Standings</NavLink>
               </li>
             </ul>
           </div>

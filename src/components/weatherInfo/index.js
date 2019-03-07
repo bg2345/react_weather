@@ -3,6 +3,11 @@ import './index.css';
 
 
 class WeatherInfo extends Component {
+  convertDeg = num => {
+    return ((num - 273.15) * (9/5) + 32).toFixed(2);
+  }
+
+
   render() {
     return (
       <div className="row">
@@ -12,7 +17,7 @@ class WeatherInfo extends Component {
             <div>
               <h3>City: {this.props.data.name}</h3>
               <h3>Country: {this.props.data.sys.country}</h3>
-              <h3>Temperature: {this.props.data.main.temp}&deg;</h3>
+              <h3>Temperature: {this.convertDeg(this.props.data.main.temp)}&deg;</h3>
               <h3>Humidity: {this.props.data.main.humidity}%</h3>
               <h3>Description: {this.props.data.weather[0].description}</h3>
             </div>
