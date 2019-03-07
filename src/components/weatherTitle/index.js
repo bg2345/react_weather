@@ -6,7 +6,7 @@ class WeatherTitle extends Component {
   render() {
     return (
       <div className="weatherTitle">
-        <h1>Check the Weather!</h1>
+        <h1>Better Weather</h1>
       </div>
 
     );

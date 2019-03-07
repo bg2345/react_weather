@@ -19,15 +19,6 @@ class Standings extends Component {
     let round = e.target.elements.round.value;
 
 
-    // if (round = '' || round === null) {
-    //   round='';
-    // }
-    //
-    // if (year = '' || year === null) {
-    //   year='current';
-    // }
-
-
     const URL = `https://ergast.com/api/f1/${year}/${round}/driverStandings.json`;
 
 
