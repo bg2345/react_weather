@@ -36,7 +36,6 @@ class Standings extends Component {
     let data = await response.json();
 
     this.setState({ 'data': data });
-    console.log(this.state.data.MRData.StandingsTable.StandingsLists[0].DriverStandings);
   }
 
   render() {
